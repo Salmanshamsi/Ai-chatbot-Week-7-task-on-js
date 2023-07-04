@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>js task check console</h1>
+    <script type="module">
+ function fizzBuzz(n) {
+  const answer = [];
+
+  for (let i = 1; i <= n; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+      answer.push("FizzBuzz");
+    } else if (i % 3 === 0) {
+      answer.push("Fizz");
+    } else if (i % 5 === 0) {
+      answer.push("Buzz");
+    } else {
+      answer.push(i.toString());
+    }
+  }
+
+  return answer;
+}
+
+// Example usage
+const n = 6;
+const result = fizzBuzz(n);
+console.log(result);
+    </script>
+</body>
+</html>
